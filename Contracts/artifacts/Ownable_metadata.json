@@ -1,0 +1,52 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "Ownable - A basic ownership contract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/MyContract.sol": "Ownable"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/MyContract.sol": {
+			"keccak256": "0xcc44c5d6c17e5bd3b2d686d4c474504be16efd58a396f00b1aae5667276ffee1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c9fd1e268d506b5deb4a0b688b71437a4124d1e13f4f22086d712462f2ce6fd6",
+				"dweb:/ipfs/QmQ76HZdjjthQf7nkj851n6JLSAxe68tXRHWMUcZEz2K9M"
+			]
+		}
+	},
+	"version": 1
+}
