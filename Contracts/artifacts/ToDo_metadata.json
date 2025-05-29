@@ -1,0 +1,222 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "taskId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "taskCreate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "taskId",
+						"type": "uint256"
+					}
+				],
+				"name": "taskDelete",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "taskId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "taskUpdate",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "allTask",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							}
+						],
+						"internalType": "struct ToDo.Task[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_taskName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_date",
+						"type": "string"
+					}
+				],
+				"name": "createTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_taskName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_date",
+						"type": "string"
+					}
+				],
+				"name": "updateTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_taskId",
+						"type": "uint256"
+					}
+				],
+				"name": "viewTask",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							}
+						],
+						"internalType": "struct ToDo.Task",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/Todo.sol": "ToDo"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/Todo.sol": {
+			"keccak256": "0x0610e64916dd04e9b7af023846b390d17e58cca90c6e20769ad33a011ad4c8bd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d55e2b8553225cee55f6bf21f2f0ce4ea2be285eccdf306c15d537b0fa6d8523",
+				"dweb:/ipfs/QmYjLaCMPmkpN8iEtWr9Hghwu87N2ZpFHWoBA1FGAymz7F"
+			]
+		}
+	},
+	"version": 1
+}
